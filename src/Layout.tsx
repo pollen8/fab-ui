@@ -174,7 +174,7 @@ export const FormGroup = styled.div<{ checked?: boolean }>`
   margin: 0 0.5rem 0.7rem 0;
   `;
 
-  export const Label = styled.label`
+export const Label = styled.label`
   text-transform: uppercase;
   padding: 0.25rem 0;
   color: ${ (props) => props.theme.grey500};

@@ -9971,7 +9971,7 @@ var templateObject_1, templateObject_2, templateObject_3, templateObject_4, temp
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/*! exports provided: DeleteConfirmation, Grid, Modal, Row, Col, Container, Content, SubHeading, Card, Name, CardBody, SlidePanelBody, Description, Input, Button, FormGroup, TextArea, ModalBody, ModalFooter, Alert */
+/*! exports provided: DeleteConfirmation, Grid, Modal, Row, Col, Container, Content, SubHeading, Card, Name, CardBody, SlidePanelBody, Description, Input, Button, FormGroup, TextArea, ModalBody, ModalFooter, Alert, Label */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10019,6 +10019,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ModalFooter", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["ModalFooter"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Alert", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Alert"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Label", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Label"]; });
 
 
 
