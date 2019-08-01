@@ -24,9 +24,12 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
   return acc;
 }, {} as any);
 
-export const Row = styled.div`
+export const Row = styled.div<{ noGutters?: boolean }>`
   display: flex;
   flex-wrap: wrap;
+  >div {
+    ${(props) => props.noGutters && 'margin: 0;'}
+  }
 `;
 
 const size = (size?: number, margin?: number): string => {

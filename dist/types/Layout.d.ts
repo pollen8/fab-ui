@@ -3,7 +3,9 @@ export declare const sizes: {
     [K in TMediaSize]: number;
 };
 export declare const media: any;
-export declare const Row: import("styled-components").StyledComponent<"div", any, {}, never>;
+export declare const Row: import("styled-components").StyledComponent<"div", any, {
+    noGutters?: boolean | undefined;
+}, never>;
 export declare const Col: import("styled-components").StyledComponent<"div", any, {
     flexGrow?: number | undefined;
     size?: number | undefined;
