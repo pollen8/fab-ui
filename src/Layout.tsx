@@ -119,55 +119,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Button = styled.button<{ size?: 'sm' | 'md' | 'lg', color?: string, hoverColor?: string; outline?: boolean }>`
-  line-height: ${(props) => props.size ?
-    props.size === 'sm' ? '1rem' : '2.188rem'
-    : '2.188rem'};
-  display: flex;
-  align-items: center;
-  font-size: ${(props) => props.size ?
-    props.size === 'sm' ? '0.65rem' : '0.75rem'
-    : '0.75rem'};
-  padding: ${({ size }) => size ?
-    size === 'sm' ? '0.2rem 0.6rem' : '0 1.2rem'
-    : '0 1.2rem'};
-
-  border-radius: 0.5rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: center;
-  transition: all .15s ease -in -out;
-  white-space: nowrap;
-  border: 0;
-  background-color: ${
-  ({ theme, color, outline }) => outline
-    ? 'transparent'
-    : color ? theme[color] : theme.primary300
-  };
-  color: ${
-  ({ theme, color, outline }) => outline
-    ? color ? theme[color] : theme.primary300
-    : theme.onBackground
-  };
-  letter-spacing: 0.04rem;
-
-    &: hover {
-    background-color: ${
-  ({ theme, hoverColor, outline }) => outline
-    ? 'transparent'
-    : hoverColor ? theme[hoverColor] : theme.primary500
-  };
-    color: ${
-  ({ theme, color, outline }) => outline
-    ? color ? theme[color] : theme.primary500
-    : theme.onBackground
-  };
-}
-
-svg {
-  margin-right: 0.2rem;
-}
-`;
+export type IControlSize = 'sm' | 'md' | 'lg';
 
 export const FormGroup = styled.div<{ checked?: boolean }>`
   display: ${ (props) => props.checked ? 'flex' : 'block'};
