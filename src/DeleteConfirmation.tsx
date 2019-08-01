@@ -4,8 +4,9 @@ import React, {
 } from 'react';
 import { IoMdTrash } from 'react-icons/io';
 import Modal from 'react-responsive-modal';
+
+import { Button } from './Button';
 import {
-  Button,
   ModalBody,
   ModalFooter,
 } from './Layout';

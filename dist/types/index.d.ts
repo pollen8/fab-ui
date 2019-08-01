@@ -1,4 +1,5 @@
 export { DeleteConfirmation } from './DeleteConfirmation';
 export { Grid } from './Grid';
 export { default as Modal } from 'react-responsive-modal';
-export { Row, Col, Container, Content, SubHeading, Card, Name, CardBody, SlidePanelBody, Description, Input, Button, FormGroup, TextArea, ModalBody, ModalFooter, Alert, Label } from './Layout';
+export { default as Button } from './Button';
+export { Row, Col, Container, Content, SubHeading, Card, Name, CardBody, SlidePanelBody, Description, Input, FormGroup, TextArea, ModalBody, ModalFooter, Alert, Label } from './Layout';

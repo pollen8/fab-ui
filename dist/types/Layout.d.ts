@@ -20,12 +20,7 @@ export declare const CardBody: import("styled-components").StyledComponent<"div"
 export declare const SlidePanelBody: import("styled-components").StyledComponent<"div", any, {}, never>;
 export declare const Description: import("styled-components").StyledComponent<"div", any, {}, never>;
 export declare const Input: import("styled-components").StyledComponent<"input", any, {}, never>;
-export declare const Button: import("styled-components").StyledComponent<"button", any, {
-    size?: "sm" | "md" | "lg" | undefined;
-    color?: string | undefined;
-    hoverColor?: string | undefined;
-    outline?: boolean | undefined;
-}, never>;
+export declare type IControlSize = 'sm' | 'md' | 'lg';
 export declare const FormGroup: import("styled-components").StyledComponent<"div", any, {
     checked?: boolean | undefined;
 }, never>;

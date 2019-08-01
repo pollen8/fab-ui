@@ -9590,6 +9590,74 @@ function extend() {
 
 /***/ }),
 
+/***/ "./src/Button.tsx":
+/*!************************!*\
+  !*** ./src/Button.tsx ***!
+  \************************/
+/*! exports provided: Button */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+var __makeTemplateObject = undefined && undefined.__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+
+  return cooked;
+};
+
+
+var Button = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  line-height: ", ";\n  display: flex;\n  align-items: center;\n  font-size: ", ";\n  padding: ", ";\n\n  border-radius: ", ";\n  ", "\n  cursor: pointer;\n  text-align: center;\n  transition: all .15s ease -in -out;\n  white-space: nowrap;\n  border: 0;\n  background-color: ", ";\n  color: ", ";\n  letter-spacing: 0.04rem;\n\n    &: hover {\n    background-color: ", ";\n    color: ", ";\n}\n\nsvg {\n  margin-right: 0.2rem;\n}\n"], ["\n  line-height: ", ";\n  display: flex;\n  align-items: center;\n  font-size: ", ";\n  padding: ", ";\n\n  border-radius: ", ";\n  ", "\n  cursor: pointer;\n  text-align: center;\n  transition: all .15s ease -in -out;\n  white-space: nowrap;\n  border: 0;\n  background-color: ", ";\n  color: ", ";\n  letter-spacing: 0.04rem;\n\n    &: hover {\n    background-color: ", ";\n    color: ", ";\n}\n\nsvg {\n  margin-right: 0.2rem;\n}\n"])), function (props) {
+  return props.size ? props.size === 'sm' ? '1rem' : '2.188rem' : '2.188rem';
+}, function (props) {
+  return props.size ? props.size === 'sm' ? '0.65rem' : '0.75rem' : '0.75rem';
+}, function (_a) {
+  var size = _a.size,
+      text = _a.text;
+  return text ? '0' : size ? size === 'sm' ? '0.2rem 0.6rem' : '0 1.2rem' : '0 1.2rem';
+}, function (_a) {
+  var text = _a.text;
+  return text ? '0' : '0.5rem';
+}, function (_a) {
+  var text = _a.text;
+  return !text && 'text-transform: uppercase;';
+}, function (_a) {
+  var theme = _a.theme,
+      color = _a.color,
+      outline = _a.outline,
+      text = _a.text;
+  return text || outline ? 'transparent' : color ? theme[color] : theme.primary300;
+}, function (_a) {
+  var theme = _a.theme,
+      color = _a.color,
+      outline = _a.outline,
+      text = _a.text;
+  return outline || text ? color ? theme[color] : theme.primary300 : theme.onBackground;
+}, function (_a) {
+  var theme = _a.theme,
+      hoverColor = _a.hoverColor,
+      outline = _a.outline,
+      text = _a.text;
+  return text || outline ? 'transparent' : hoverColor ? theme[hoverColor] : theme.primary500;
+}, function (_a) {
+  var theme = _a.theme,
+      color = _a.color,
+      outline = _a.outline,
+      text = _a.text;
+  return outline || text ? color ? theme[color] : theme.primary500 : theme.onBackground;
+});
+var templateObject_1;
+
+/***/ }),
+
 /***/ "./src/DeleteConfirmation.tsx":
 /*!************************************!*\
   !*** ./src/DeleteConfirmation.tsx ***!
@@ -9604,7 +9672,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_icons_io__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons/io */ "./node_modules/react-icons/io/index.esm.js");
 /* harmony import */ var react_responsive_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-responsive-modal */ "./node_modules/react-responsive-modal/lib/index.es.js");
-/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Layout */ "./src/Layout.tsx");
+/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Button */ "./src/Button.tsx");
+/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Layout */ "./src/Layout.tsx");
+
 
 
 
@@ -9616,7 +9686,7 @@ var DeleteConfirmation = function DeleteConfirmation(_a) {
       open = _b[0],
       onToggle = _b[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Layout__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     size: "sm",
     style: {
       position: 'absolute',
@@ -9640,13 +9710,13 @@ var DeleteConfirmation = function DeleteConfirmation(_a) {
       return onToggle(false);
     },
     center: true
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Layout__WEBPACK_IMPORTED_MODULE_3__["ModalBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Are you sure you want to delete?")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Layout__WEBPACK_IMPORTED_MODULE_3__["ModalFooter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Layout__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Layout__WEBPACK_IMPORTED_MODULE_4__["ModalBody"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Are you sure you want to delete?")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Layout__WEBPACK_IMPORTED_MODULE_4__["ModalFooter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     type: "button",
     outline: true,
     onClick: function onClick() {
       return onToggle(false);
     }
-  }, "Cancel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Layout__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+  }, "Cancel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     type: "button",
     color: "danger500",
     hoverColor: "danger400",
@@ -9804,7 +9874,7 @@ var Grid = function (_super) {
 /*!************************!*\
   !*** ./src/Layout.tsx ***!
   \************************/
-/*! exports provided: sizes, media, Row, Col, Container, Content, SubHeading, Name, Card, CardBody, SlidePanelBody, Description, Input, Button, FormGroup, Label, TextArea, ModalBody, ModalFooter, Alert */
+/*! exports provided: sizes, media, Row, Col, Container, Content, SubHeading, Name, Card, CardBody, SlidePanelBody, Description, Input, FormGroup, Label, TextArea, ModalBody, ModalFooter, Alert */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9822,7 +9892,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlidePanelBody", function() { return SlidePanelBody; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Description", function() { return Description; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Input", function() { return Input; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormGroup", function() { return FormGroup; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Label", function() { return Label; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextArea", function() { return TextArea; });
@@ -9910,60 +9979,32 @@ var Input = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.input(templ
   var theme = _a.theme;
   return theme.primary300;
 });
-var Button = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button(templateObject_13 || (templateObject_13 = __makeTemplateObject(["\n  line-height: ", ";\n  display: flex;\n  align-items: center;\n  font-size: ", ";\n  padding: ", ";\n\n  border-radius: 0.5rem;\n  text-transform: uppercase;\n  cursor: pointer;\n  text-align: center;\n  transition: all .15s ease -in -out;\n  white-space: nowrap;\n  border: 0;\n  background-color: ", ";\n  color: ", ";\n  letter-spacing: 0.04rem;\n\n    &: hover {\n    background-color: ", ";\n    color: ", ";\n}\n\nsvg {\n  margin-right: 0.2rem;\n}\n"], ["\n  line-height: ", ";\n  display: flex;\n  align-items: center;\n  font-size: ", ";\n  padding: ", ";\n\n  border-radius: 0.5rem;\n  text-transform: uppercase;\n  cursor: pointer;\n  text-align: center;\n  transition: all .15s ease -in -out;\n  white-space: nowrap;\n  border: 0;\n  background-color: ", ";\n  color: ", ";\n  letter-spacing: 0.04rem;\n\n    &: hover {\n    background-color: ", ";\n    color: ", ";\n}\n\nsvg {\n  margin-right: 0.2rem;\n}\n"])), function (props) {
-  return props.size ? props.size === 'sm' ? '1rem' : '2.188rem' : '2.188rem';
-}, function (props) {
-  return props.size ? props.size === 'sm' ? '0.65rem' : '0.75rem' : '0.75rem';
-}, function (_a) {
-  var size = _a.size;
-  return size ? size === 'sm' ? '0.2rem 0.6rem' : '0 1.2rem' : '0 1.2rem';
-}, function (_a) {
-  var theme = _a.theme,
-      color = _a.color,
-      outline = _a.outline;
-  return outline ? 'transparent' : color ? theme[color] : theme.primary300;
-}, function (_a) {
-  var theme = _a.theme,
-      color = _a.color,
-      outline = _a.outline;
-  return outline ? color ? theme[color] : theme.primary300 : theme.onBackground;
-}, function (_a) {
-  var theme = _a.theme,
-      hoverColor = _a.hoverColor,
-      outline = _a.outline;
-  return outline ? 'transparent' : hoverColor ? theme[hoverColor] : theme.primary500;
-}, function (_a) {
-  var theme = _a.theme,
-      color = _a.color,
-      outline = _a.outline;
-  return outline ? color ? theme[color] : theme.primary500 : theme.onBackground;
-});
-var FormGroup = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div(templateObject_14 || (templateObject_14 = __makeTemplateObject(["\n  display: ", ";\n  margin: 0 0.5rem 0.7rem 0;\n  "], ["\n  display: ", ";\n  margin: 0 0.5rem 0.7rem 0;\n  "])), function (props) {
+var FormGroup = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div(templateObject_13 || (templateObject_13 = __makeTemplateObject(["\n  display: ", ";\n  margin: 0 0.5rem 0.7rem 0;\n  "], ["\n  display: ", ";\n  margin: 0 0.5rem 0.7rem 0;\n  "])), function (props) {
   return props.checked ? 'flex' : 'block';
 });
-var Label = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.label(templateObject_15 || (templateObject_15 = __makeTemplateObject(["\n  text-transform: uppercase;\n  padding: 0.25rem 0;\n  color: ", ";\n  font-size: 0.9rem;\n  display: block;\n"], ["\n  text-transform: uppercase;\n  padding: 0.25rem 0;\n  color: ", ";\n  font-size: 0.9rem;\n  display: block;\n"])), function (props) {
+var Label = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.label(templateObject_14 || (templateObject_14 = __makeTemplateObject(["\n  text-transform: uppercase;\n  padding: 0.25rem 0;\n  color: ", ";\n  font-size: 0.9rem;\n  display: block;\n"], ["\n  text-transform: uppercase;\n  padding: 0.25rem 0;\n  color: ", ";\n  font-size: 0.9rem;\n  display: block;\n"])), function (props) {
   return props.theme.grey500;
 });
-var TextArea = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.textarea(templateObject_16 || (templateObject_16 = __makeTemplateObject(["\n  border: 0px solid ", ";\n  width: calc(100 %-0.5rem);\n  height: 5.5rem;\n  border-radius: 0.5rem;\n  padding: 0.25rem 0.5rem;\n  box-shadow: inset 0 0  0.3rem hsla(0, 0 %, 0 %, 0.2);\n\n    &: focus {\n    box-shadow: inset 0 0  0.3rem   ", ";\n    outline: 0;\n  }\n"], ["\n  border: 0px solid ", ";\n  width: calc(100 %-0.5rem);\n  height: 5.5rem;\n  border-radius: 0.5rem;\n  padding: 0.25rem 0.5rem;\n  box-shadow: inset 0 0  0.3rem hsla(0, 0 %, 0 %, 0.2);\n\n    &: focus {\n    box-shadow: inset 0 0  0.3rem   ", ";\n    outline: 0;\n  }\n"])), function (_a) {
+var TextArea = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.textarea(templateObject_15 || (templateObject_15 = __makeTemplateObject(["\n  border: 0px solid ", ";\n  width: calc(100 %-0.5rem);\n  height: 5.5rem;\n  border-radius: 0.5rem;\n  padding: 0.25rem 0.5rem;\n  box-shadow: inset 0 0  0.3rem hsla(0, 0 %, 0 %, 0.2);\n\n    &: focus {\n    box-shadow: inset 0 0  0.3rem   ", ";\n    outline: 0;\n  }\n"], ["\n  border: 0px solid ", ";\n  width: calc(100 %-0.5rem);\n  height: 5.5rem;\n  border-radius: 0.5rem;\n  padding: 0.25rem 0.5rem;\n  box-shadow: inset 0 0  0.3rem hsla(0, 0 %, 0 %, 0.2);\n\n    &: focus {\n    box-shadow: inset 0 0  0.3rem   ", ";\n    outline: 0;\n  }\n"])), function (_a) {
   var theme = _a.theme;
   return theme.grey300;
 }, function (_a) {
   var theme = _a.theme;
   return theme.primary300;
 });
-var ModalBody = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div(templateObject_17 || (templateObject_17 = __makeTemplateObject(["\n  padding: 1rem;\n"], ["\n  padding: 1rem;\n"])));
-var ModalFooter = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div(templateObject_18 || (templateObject_18 = __makeTemplateObject(["\n  background-color: ", ";\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  border-radius: 0 0 0.25rem 0.25rem;\n"], ["\n  background-color: ", ";\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  border-radius: 0 0 0.25rem 0.25rem;\n"])), function (_a) {
+var ModalBody = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div(templateObject_16 || (templateObject_16 = __makeTemplateObject(["\n  padding: 1rem;\n"], ["\n  padding: 1rem;\n"])));
+var ModalFooter = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div(templateObject_17 || (templateObject_17 = __makeTemplateObject(["\n  background-color: ", ";\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  border-radius: 0 0 0.25rem 0.25rem;\n"], ["\n  background-color: ", ";\n  padding: 1rem 2rem;\n  display: flex;\n  justify-content: space-between;\n  border-radius: 0 0 0.25rem 0.25rem;\n"])), function (_a) {
   var theme = _a.theme;
   return theme.grey300;
 });
-var Alert = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div(templateObject_19 || (templateObject_19 = __makeTemplateObject(["\n  background-color: ", ";\n  color: ", ";\n  padding: 1rem;\n  border-radius: 0.5rem;\n"], ["\n  background-color: ", ";\n  color: ", ";\n  padding: 1rem;\n  border-radius: 0.5rem;\n"])), function (_a) {
+var Alert = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div(templateObject_18 || (templateObject_18 = __makeTemplateObject(["\n  background-color: ", ";\n  color: ", ";\n  padding: 1rem;\n  border-radius: 0.5rem;\n"], ["\n  background-color: ", ";\n  color: ", ";\n  padding: 1rem;\n  border-radius: 0.5rem;\n"])), function (_a) {
   var theme = _a.theme;
   return theme.danger100;
 }, function (_a) {
   var theme = _a.theme;
   return theme.danger500;
 });
-var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18, templateObject_19;
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18;
 
 /***/ }),
 
@@ -9971,7 +10012,7 @@ var templateObject_1, templateObject_2, templateObject_3, templateObject_4, temp
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/*! exports provided: DeleteConfirmation, Grid, Modal, Row, Col, Container, Content, SubHeading, Card, Name, CardBody, SlidePanelBody, Description, Input, Button, FormGroup, TextArea, ModalBody, ModalFooter, Alert, Label */
+/*! exports provided: DeleteConfirmation, Grid, Modal, Button, Row, Col, Container, Content, SubHeading, Card, Name, CardBody, SlidePanelBody, Description, Input, FormGroup, TextArea, ModalBody, ModalFooter, Alert, Label */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9985,42 +10026,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_responsive_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-responsive-modal */ "./node_modules/react-responsive-modal/lib/index.es.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Modal", function() { return react_responsive_modal__WEBPACK_IMPORTED_MODULE_2__["default"]; });
 
-/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Layout */ "./src/Layout.tsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Row", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Row"]; });
+/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Button */ "./src/Button.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return _Button__WEBPACK_IMPORTED_MODULE_3__["default"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Col", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Col"]; });
+/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Layout */ "./src/Layout.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Row", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Row"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Container"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Col", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Col"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Content", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Content"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Container"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SubHeading", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["SubHeading"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Content", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Content"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Card", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Card"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SubHeading", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["SubHeading"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Name", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Name"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Card", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Card"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CardBody", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["CardBody"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Name", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Name"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SlidePanelBody", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["SlidePanelBody"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CardBody", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["CardBody"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Description", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Description"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SlidePanelBody", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["SlidePanelBody"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Input", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Input"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Description", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Description"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Button"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Input", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Input"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FormGroup", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["FormGroup"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FormGroup", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["FormGroup"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "TextArea", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["TextArea"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "TextArea", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["TextArea"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ModalBody", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["ModalBody"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ModalBody", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["ModalBody"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ModalFooter", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["ModalFooter"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ModalFooter", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["ModalFooter"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Alert", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Alert"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Alert", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Alert"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Label", function() { return _Layout__WEBPACK_IMPORTED_MODULE_3__["Label"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Label", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Label"]; });
+
 
 
 
