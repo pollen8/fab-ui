@@ -10027,7 +10027,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Modal", function() { return react_responsive_modal__WEBPACK_IMPORTED_MODULE_2__["default"]; });
 
 /* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Button */ "./src/Button.tsx");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return _Button__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return _Button__WEBPACK_IMPORTED_MODULE_3__["Button"]; });
 
 /* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Layout */ "./src/Layout.tsx");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Row", function() { return _Layout__WEBPACK_IMPORTED_MODULE_4__["Row"]; });
